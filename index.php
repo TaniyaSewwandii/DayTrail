@@ -13,8 +13,8 @@
       <!-- LOGO -->
         <img src="LOGO.png" class="logo" alt="Local Travel Planner LOGO">
 <ul class="nav-list">
-      <li><a href="#home" >HOME</a></li>
-      <li><a href="#places">PLACES</a></li>
+      <li><a href="index.php" >HOME</a></li>
+      <li><a href="places.php">PLACES</a></li>
       <li><a href="#categories">CATEGORIES</a></li>
       <li><a href="#my-plan">MY PLAN</a></li>
       <li><a href="#about">ABOUT US</a></li>
@@ -28,7 +28,7 @@
     <h1>Explore Colombo</h1>
     <p>Discover amazing places within 25 km of Colombo and plan your perfect one-day trip.</p>
     <div class="buttongroup">
-      <a href="#places" class="btn btn-green">Explore Places</a>
+      <a href="places.php" class="btn btn-green">Explore Places</a>
       <a href="#plan" class="btn btn-white">Plan My Trip</a>   
     </div>
     </div>
@@ -52,7 +52,9 @@
         <h3>Lotus Tower</h3>
         <p>South Asia's tallest structure offering breathtaking skyline views.</p>
         <div class="card-actions">
-          <a href="#places" class="btn-view">VIEW MORE →</a>
+                  <a href="details.php?place=lotus-tower" class="btn-view">
+    VIEW MORE →
+</a>
           <button class="btn-card-add">+</button>
         </div>
       </div>
@@ -69,7 +71,9 @@
         <h3>Galle Face Green</h3>
         <p>Famous ocean-side urban park perfect for sunsets and street food.</p>
         <div class="card-actions">
-          <a href="#places" class="btn-view">VIEW MORE →</a>
+          <a href="details.php?place=galle-face" class="btn-view">
+    VIEW MORE →
+</a>
           <button class="btn-card-add">+</button>
         </div>
       </div>
@@ -78,7 +82,7 @@
 
   <!-- Bottom Action -->
   <div class="more-container">
-    <a href="#places" class="btn-explore-more">EXPLORE ALL PLACES</a>
+    <a href="places.php" class="btn-explore-more">EXPLORE ALL PLACES</a>
   </div>
 </section>
 <!-- FOOTER SECTION -->
@@ -95,8 +99,8 @@
     <div class="footer-col">
       <h4>NAVIGATION</h4>
       <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#places">Places</a></li>
+        <li><a href="index.php">Home</a></li>
+        <li><a href="places.php">Places</a></li>
         <li><a href="#categories">Categories</a></li>
         <li><a href="#my-plan">My Plan</a></li>
       </ul>

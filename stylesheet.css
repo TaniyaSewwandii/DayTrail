@@ -374,3 +374,266 @@ height: 80px;
   color: rgba(255, 255, 255, 0.4);
   font-size: 13px;
 }
+/* PLACES PAGE */
+
+.places-page {
+    background-color: #0d1117;
+    min-height: 100vh;
+    padding: 160px 40px 100px;
+    color: white;
+}
+
+.places-page-header {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.places-page-header h1 {
+    font-size: 55px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.places-page-header p {
+    color: rgba(255,255,255,0.65);
+    font-size: 17px;
+    margin-top: 15px;
+}
+
+/* SEARCH */
+
+.places-controls {
+    max-width: 1200px;
+    margin: 0 auto 50px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.place-search {
+    width: 450px;
+    padding: 14px 20px;
+    border-radius: 30px;
+    border: 1px solid rgba(255,255,255,0.2);
+    background: rgba(255,255,255,0.08);
+    color: white;
+    font-size: 14px;
+}
+
+.category-filter {
+    width: 200px;
+    padding: 14px 20px;
+    border-radius: 30px;
+    border: 1px solid rgba(255,255,255,0.2);
+    background: rgba(255,255,255,0.08);
+    color: white;
+    font-size: 14px;
+}
+
+.category-filter option {
+    color: black;
+}
+
+/* ========================================
+   PLACE DETAILS PAGE
+   ======================================== */
+
+.details-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto 80px;
+}
+
+
+/* MAIN DETAILS CARD */
+
+.details-card {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    background: #0b0606;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(91, 88, 88, 0.1);
+}
+
+
+/* IMAGE */
+
+.details-image {
+    width: 100%;
+    height: 100%;
+    min-height: 550px;
+}
+
+.details-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* DETAILS CONTENT */
+
+.details-content {
+    padding: 40px;
+}
+
+
+/* CATEGORY */
+
+.details-content .category-badge {
+    display: inline-block;
+    padding: 7px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+
+/* TITLE */
+
+.details-content h1 {
+    font-size: 40px;
+    margin: 18px 0 30px;
+    color: #f9f8f8;
+}
+
+
+/* INFORMATION GRID */
+
+.details-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 35px;
+}
+
+
+/* INFORMATION BOX */
+
+.info-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px;
+    background: #059669;
+    border-radius: 12px;
+}
+
+
+.info-box > span {
+    font-size: 24px;
+}
+
+
+.info-box small {
+    display: block;
+    color: #f9fafa;
+    font-size: 12px;
+    margin-bottom: 4px;
+}
+
+
+.info-box strong {
+    display: block;
+    color: #f8f8f8;
+    font-size: 14px;
+}
+
+
+/* ABOUT SECTION */
+
+.about-place {
+    margin-bottom: 30px;
+}
+
+
+.about-place h2,
+.place-location h2,
+.good-for h2 {
+    font-size: 21px;
+    color: #efecec;
+    margin-bottom: 12px;
+}
+
+
+.about-place p {
+    color: #f9f7f7;
+    line-height: 1.7;
+    font-size: 15px;
+}
+
+
+/* LOCATION */
+
+.place-location {
+    margin-bottom: 30px;
+}
+
+
+.place-location p {
+    color: #fcfcfc;
+    font-size: 15px;
+}
+
+
+/* TAGS */
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+
+.tags span {
+    padding: 8px 15px;
+    background: #059669;
+    border-radius: 20px;
+    color: #fbfbfb;
+    font-size: 13px;
+}
+
+
+/* ========================================
+   MOBILE RESPONSIVE
+   ======================================== */
+
+@media (max-width: 768px) {
+
+    .details-container {
+        width: 92%;
+        margin-top: 25px;
+    }
+
+
+    .details-card {
+        grid-template-columns: 1fr;
+    }
+
+
+    .details-image {
+        min-height: 300px;
+        height: 300px;
+    }
+
+
+    .details-content {
+        padding: 25px;
+    }
+
+
+    .details-content h1 {
+        font-size: 30px;
+        margin-bottom: 25px;
+    }
+
+
+    .details-info {
+        grid-template-columns: 1fr;
+    }
+
+}
