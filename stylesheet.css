@@ -206,6 +206,22 @@ height: 80px;
   letter-spacing: 1px;
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
+.back-btn {
+    display: inline-block;
+    margin-bottom: 25px;
+    padding: 10px 12px;
+    background-color: #059669;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    
+}
+
+.back-btn:hover {
+    background-color: #047857;
+}
 
 /* Card Text Body */
 .card-body {
@@ -344,7 +360,7 @@ height: 80px;
 }
 
 .footer-col ul li a {
-  color: rgba(255, 255, 255, 0.7);
+  color: rgb(255, 255, 255);
   text-decoration: none;
   font-size: 14px;
   transition: color 0.2s ease;
@@ -356,7 +372,7 @@ height: 80px;
 
 /* Contact Info */
 .footer-col p {
-  color: rgba(255, 255, 255, 0.7);
+  color: rgb(255, 255, 255);
   font-size: 14px;
   margin-bottom: 12px;
 }
@@ -371,13 +387,14 @@ height: 80px;
 }
 
 .footer-bottom p {
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.973);
   font-size: 13px;
 }
 /* PLACES PAGE */
 
 .places-page {
     background-color: #0d1117;
+    padding-top: 130px;
     min-height: 100vh;
     padding: 160px 40px 100px;
     color: white;
@@ -403,12 +420,12 @@ height: 80px;
 
 /* SEARCH */
 
-.places-controls {
-    max-width: 1200px;
+.search-filter-container {
+       max-width: 1200px;
     margin: 0 auto 50px;
     display: flex;
     justify-content: center;
-    gap: 15px;
+    align-items: center;
 }
 
 .place-search {
@@ -421,19 +438,7 @@ height: 80px;
     font-size: 14px;
 }
 
-.category-filter {
-    width: 200px;
-    padding: 14px 20px;
-    border-radius: 30px;
-    border: 1px solid rgba(255,255,255,0.2);
-    background: rgba(255,255,255,0.08);
-    color: white;
-    font-size: 14px;
-}
 
-.category-filter option {
-    color: black;
-}
 
 /* ========================================
    PLACE DETAILS PAGE
@@ -451,10 +456,12 @@ height: 80px;
 .details-card {
     display: grid;
     grid-template-columns: 45% 55%;
-    background: #0b0606;
+    background-color: var(--card-bg);
+    color: var(--text);
+    border: 1px solid var(--border);
     border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 8px 30px rgba(91, 88, 88, 0.1);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.1);
 }
 
 
@@ -596,44 +603,501 @@ height: 80px;
     color: #fbfbfb;
     font-size: 13px;
 }
-
-
-/* ========================================
-   MOBILE RESPONSIVE
-   ======================================== */
-
-@media (max-width: 768px) {
-
-    .details-container {
-        width: 92%;
-        margin-top: 25px;
-    }
-
-
-    .details-card {
-        grid-template-columns: 1fr;
-    }
-
-
-    .details-image {
-        min-height: 300px;
-        height: 300px;
-    }
-
-
-    .details-content {
-        padding: 25px;
-    }
-
-
-    .details-content h1 {
-        font-size: 30px;
-        margin-bottom: 25px;
-    }
-
-
-    .details-info {
-        grid-template-columns: 1fr;
-    }
-
+.map-button {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 10px 18px;
+    background: #059669;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
 }
+
+.map-button:hover {
+    background: #4f5154;
+}
+
+/* =========================================
+   DAYTRAIL LIGHT / DARK THEME
+   ========================================= */
+
+:root {
+    --bg: #ffffff;
+    --text: #171616;
+    --section-bg: #f5f7f8;
+    --card-bg: #ffffff;
+    --border: #dddddd;
+    --muted: #555555;
+    --footer-bg: #059669;
+    --footer-text: #ffffff;
+}
+
+/* DARK MODE VARIABLES */
+
+body.dark-mode {
+    --bg: #0d1117;
+    --text: #ffffff;
+    --section-bg: #0d1117;
+    --card-bg: #161b22;
+    --border: rgba(255,255,255,0.12);
+    --muted: rgba(255,255,255,0.65);
+    --footer-bg: #080b10;
+    --footer-text: #ffffff;
+}
+
+
+/* =========================================
+   BODY
+   ========================================= */
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+/* =========================================
+   NAVBAR
+   ========================================= */
+
+.navbar {
+    color: var(--text);
+}
+
+/* LIGHT MODE NAV */
+
+body:not(.dark-mode) .nav-list a {
+    color: #171616;
+}
+
+body:not(.dark-mode) .nav-list a:hover {
+    color: #059669;
+}
+
+/* DARK MODE NAV */
+
+body.dark-mode .nav-list a {
+    color: #ffffff;
+}
+
+body.dark-mode .nav-list a:hover {
+    color: #059669;
+}
+
+
+/* =========================================
+   PLACES SECTION - HOME PAGE
+   ========================================= */
+
+.places-section {
+    background-color: var(--section-bg);
+    color: var(--text);
+}
+
+
+/* =========================================
+   PLACES PAGE
+   ========================================= */
+
+.places-page {
+    background-color: var(--section-bg);
+    color: var(--text);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.places-page-header h1 {
+    color: var(--text);
+}
+
+.places-page-header p {
+    color: var(--muted);
+}
+
+
+/* =========================================
+   PLACE CARDS
+   ========================================= */
+
+.place-card {
+    background-color: var(--card-bg);
+    color: var(--text);
+    border: 1px solid var(--border);
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+/* CARD TITLE */
+
+.card-body h3 {
+    color: var(--text);
+}
+
+
+/* CARD DESCRIPTION */
+
+.card-body p {
+    color: var(--muted);
+}
+
+
+/* DISTANCE */
+
+.distance-text {
+    color: #059669;
+}
+
+
+/* CARD ACTION LINE */
+
+.card-actions {
+    border-top: 1px solid var(--border);
+}
+
+
+/* =========================================
+   VIEW MORE BUTTON
+   ========================================= */
+
+/* LIGHT */
+
+body:not(.dark-mode) .btn-view {
+    color: #222222;
+}
+
+body:not(.dark-mode) .btn-view:hover {
+    color: #059669;
+}
+
+/* DARK */
+
+body.dark-mode .btn-view {
+    color: #ffffff;
+}
+
+body.dark-mode .btn-view:hover {
+    color: #059669;
+}
+
+
+/* =========================================
+   PLUS BUTTON
+   ========================================= */
+
+/* LIGHT */
+
+body:not(.dark-mode) .btn-card-add {
+    background-color: #e5e7eb;
+    color: #222222;
+    border: 1px solid #cccccc;
+}
+
+body:not(.dark-mode) .btn-card-add:hover {
+    background-color: #059669;
+    color: #ffffff;
+}
+
+
+/* DARK */
+
+body.dark-mode .btn-card-add {
+    background-color: rgba(255,255,255,0.1);
+    color: #ffffff;
+    border: 1px solid rgba(255,255,255,0.15);
+}
+
+body.dark-mode .btn-card-add:hover {
+    background-color: #059669;
+    color: #ffffff;
+}
+
+
+/* =========================================
+   SEARCH BAR
+   ========================================= */
+
+.place-search,
+.category-filter {
+    background-color: var(--card-bg);
+    color: var(--text);
+    border: 1px solid var(--border);
+}
+
+.place-search::placeholder {
+    color: var(--muted);
+}
+
+.category-filter option {
+    background-color: var(--card-bg);
+    color: var(--text);
+}
+
+
+/* =========================================
+   DETAILS PAGE
+   ========================================= */
+
+.details-container {
+    background-color: var(--bg);
+}
+
+.details-card {
+    background-color: var(--card-bg);
+    color: var(--text);
+    border: 1px solid var(--border);
+}
+
+
+/* DETAILS TITLE */
+
+.details-content h1 {
+    color: var(--text);
+}
+
+
+/* DETAILS HEADINGS */
+
+.about-place h2,
+.place-location h2,
+.good-for h2 {
+    color: var(--text);
+}
+
+
+/* DETAILS DESCRIPTION */
+
+.about-place p,
+.place-location p {
+    color: var(--muted);
+}
+
+
+/* =========================================
+   INFO BOXES
+   ========================================= */
+
+.info-box {
+    background-color: #059669;
+    color: #ffffff;
+}
+
+.info-box small {
+    color: #ffffff;
+}
+
+.info-box strong {
+    color: #ffffff;
+}
+
+
+/* =========================================
+   TAGS
+   ========================================= */
+
+.tags span {
+    background-color: #059669;
+    color: #ffffff;
+}
+
+
+/* =========================================
+   MAP BUTTON
+   ========================================= */
+
+.map-button {
+    background-color: #059669;
+    color: #ffffff;
+}
+
+.map-button:hover {
+    background-color: #047857;
+    color: #ffffff;
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+.footer {
+    background-color: var(--footer-bg);
+    color: var(--footer-text);
+}
+
+
+/* Footer stays white because footer is green/dark */
+
+.footer-col p {
+    color: rgba(255,255,255,0.75);
+}
+
+.footer-col ul li a {
+    color: rgba(255,255,255,0.75);
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+}
+
+
+/* =========================================
+   THEME TOGGLE
+   ========================================= */
+
+.theme-toggle {
+    border: none;
+    background: transparent;
+    font-size: 22px;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.theme-toggle:hover {
+    background-color: rgba(128,128,128,0.2);
+}
+/* =========================================
+   CATEGORY PAGE
+   ========================================= */
+
+.category-page {
+    min-height: 100vh;
+
+    padding: 100px  80px;
+
+    background-color: var(--section-bg);
+    color: var(--text);
+
+    transition: background-color 0.3s ease,
+                color 0.3s ease;
+}
+
+
+/* CATEGORY HEADER */
+
+.category-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.category-header h1 {
+    margin: 0 0 12px;
+
+    font-size: 42px;
+    color: var(--text);
+}
+
+.category-header p {
+    margin: 0;
+
+    font-size: 17px;
+    color: var(--muted);
+}
+
+
+/* CATEGORY GRID */
+
+.category-grid {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+/* CATEGORY CARD */
+
+.category-card {
+    display: block;
+
+    padding: 35px 25px;
+
+    background-color: var(--card-bg);
+    color: var(--text);
+
+    border: 1px solid var(--border);
+    border-radius: 18px;
+
+    text-align: center;
+    text-decoration: none;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+/* HOVER */
+
+.category-card:hover {
+    transform: translateY(-8px);
+
+    border-color: #059669;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+
+/* ICON */
+
+.category-icon {
+    width: 70px;
+    height: 70px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #059669;
+    color: white;
+
+    border-radius: 50%;
+
+    font-size: 32px;
+}
+
+
+/* TITLE */
+
+.category-card h2 {
+    margin: 0 0 12px;
+
+    font-size: 23px;
+    color: var(--text);
+}
+
+
+/* DESCRIPTION */
+
+.category-card p {
+    min-height: 55px;
+
+    margin: 0 0 20px;
+
+    color: var(--muted);
+
+    line-height: 1.6;
+}
+
+
+/* EXPLORE */
+
+.category-card span {
+    color: #059669;
+    font-weight: 600;
+}
+
+

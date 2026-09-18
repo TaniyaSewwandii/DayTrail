@@ -22,7 +22,7 @@
 <ul class="nav-list">
       <li><a href="index.php" >HOME</a></li>
       <li><a href="places.php">PLACES</a></li>
-      <li><a href="#categories">CATEGORIES</a></li>
+      <li><a href="category.php">CATEGORIES</a></li>
       <li><a href="#my-plan">MY PLAN</a></li>
       <li><a href="#about">ABOUT US</a></li>
       <li><a href="#contact">CONTACT</a></li>
@@ -46,35 +46,22 @@
 
     </div>
 
+  <!--search bar-->
+     <div class="search-filter-container">
 
-    <!-- SEARCH AND FILTER -->
+    <input
+        type="text"
+        id="searchInput"
+        class="place-search"
+        placeholder="🔍 Search places..."
+    >
 
-    <div class="places-controls">
-
-        <input
-            type="text"
-            placeholder="Search for a place..."
-            class="place-search"
-        >
-
-        <select class="category-filter">
-
-            <option value="">All Categories</option>
-            <option value="Nature">Nature</option>
-            <option value="Religious">Religious</option>
-            <option value="Heritage">Heritage</option>
-            <option value="Entertainment">Entertainment</option>
-            <option value="Shopping">Shopping</option>
-
-        </select>
-
-    </div>
+</div>
 
 
     <!-- PLACES GRID -->
 
-    <div class="places-grid">
-
+    <div class="places-grid" id="placesContainer">
 
        <!-- CARD 1 -->
 
@@ -87,9 +74,7 @@
             alt="Galle Face Green"
         >
 
-        <span class="category-badge">
-            NATURE
-        </span>
+       <span class="category-badge">NATURE</span>
 
     </div>
 
@@ -134,9 +119,7 @@
             alt="One Galle Face"
         >
 
-        <span class="category-badge">
-            SHOPPING
-        </span>
+      <span class="category-badge">SHOPPING</span>
 
     </div>
 
@@ -544,8 +527,46 @@
     </div>
 
 </div>
+<!-- CARD 11 -->
+<div class="place-card">
+
+    <div class="card-img-wrapper">
+        <img src="pics/stanthonys.jpg" alt="St. Anthony's Shrine Kochchikade">
+
+        <span class="category-badge">RELIGIOUS</span>
+    </div>
+
+    <div class="card-body">
+
+        <span class="distance-text">
+            📍 4 km from center
+        </span>
+
+        <h3>St. Anthony's Shrine</h3>
+
+        <p>
+            A historic national shrine in Kochchikade,
+            known for its religious and cultural importance.
+        </p>
+
+        <div class="card-actions">
+
+            <a href="details.php?place=st-anthonys" class="btn-view">
+                VIEW MORE →
+            </a>
+
+            <button class="btn-card-add">
+                +
+            </button>
+
+        </div>
 
     </div>
+
+</div>
+
+    </div>
+    
 
 </section>
 
@@ -578,7 +599,7 @@
             <ul>
                 <li><a href="index.php">Home</a></li>
                 <li><a href="places.php">Places</a></li>
-                <li><a href="#categories">Categories</a></li>
+                <li><a href="category.php">Categories</a></li>
                 <li><a href="#my-plan">My Plan</a></li>
             </ul>
 
@@ -607,6 +628,6 @@
     </div>
 
 </footer>
-
+<script src="script.js"></script>
 </body>
 </html>

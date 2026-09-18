@@ -15,11 +15,14 @@
 <ul class="nav-list">
       <li><a href="index.php" >HOME</a></li>
       <li><a href="places.php">PLACES</a></li>
-      <li><a href="#categories">CATEGORIES</a></li>
+      <li><a href="category.php">CATEGORIES</a></li>
       <li><a href="#my-plan">MY PLAN</a></li>
       <li><a href="#about">ABOUT US</a></li>
       <li><a href="#contact">CONTACT</a></li>
     </ul>
+    <button id="themeToggle" class="theme-toggle">
+    🌙
+</button>
   </nav>
 
 </header>
@@ -101,7 +104,7 @@
       <ul>
         <li><a href="index.php">Home</a></li>
         <li><a href="places.php">Places</a></li>
-        <li><a href="#categories">Categories</a></li>
+        <li><a href="category.php">Categories</a></li>
         <li><a href="#my-plan">My Plan</a></li>
       </ul>
     </div>
@@ -123,7 +126,7 @@
 </footer>
 
 
-
+<script src="script.js"></script>
 
 </body>
 </html>
