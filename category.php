@@ -40,15 +40,15 @@
             </li>
 
             <li>
-                <a href="#my-plan">MY PLAN</a>
+                <a href="myplan.php">MY PLAN</a>
             </li>
 
             <li>
-                <a href="#about">ABOUT US</a>
+                <a href="aboutus.php">ABOUT US</a>
             </li>
 
             <li>
-                <a href="#contact">CONTACT</a>
+                <a href="contact.php">CONTACT</a>
             </li>
 
         </ul>
@@ -230,7 +230,7 @@
                 <li><a href="index.php">Home</a></li>
                 <li><a href="places.php">Places</a></li>
                 <li><a href="category.php">Categories</a></li>
-                <li><a href="#my-plan">My Plan</a></li>
+                <li><a href="myplan.php">My Plan</a></li>
             </ul>
 
         </div>

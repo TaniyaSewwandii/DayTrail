@@ -121,9 +121,9 @@ height: 80px;
 }
 
 .btn-green:hover {
-    background-color: #059669; 
-    border-color: #059669;
-    color: #ffffff;
+    background-color: #948c8c; 
+    border-color: #948c8c;
+    color: #151515;
 }
 /* PLACES SECTION - DARK MODERN THEME */
 .places-section {
@@ -220,7 +220,9 @@ height: 80px;
 }
 
 .back-btn:hover {
-    background-color: #047857;
+    background-color: #948c8c;
+    color: rgb(5, 5, 5);
+
 }
 
 /* Card Text Body */
@@ -296,8 +298,8 @@ height: 80px;
   display: inline-block;
   padding: 14px 36px;
   border-radius: 50px;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1.5px solid rgba(255, 255, 255, 0.2);
+  background: #059669;
+  border:  #059669;
   color: #ffffff;
   text-decoration: none;
   font-size: 13px;
@@ -307,7 +309,7 @@ height: 80px;
 }
 
 .btn-explore-more:hover {
-  background: #ffffff;
+  background: #948c8c;
   color: #000000;
 }
 /* MODERN FOOTER STYLES */
@@ -616,6 +618,7 @@ height: 80px;
 
 .map-button:hover {
     background: #4f5154;
+      color: rgb(0, 0, 0);
 }
 
 /* =========================================
@@ -915,7 +918,7 @@ body.dark-mode .btn-card-add:hover {
 }
 
 .map-button:hover {
-    background-color: #047857;
+    background-color: #4f5154;
     color: #ffffff;
 }
 
@@ -1099,5 +1102,1085 @@ body.dark-mode .btn-card-add:hover {
     color: #059669;
     font-weight: 600;
 }
+/* =========================================
+   ABOUT US PAGE
+========================================= */
+
+.about-page {
+    min-height: 100vh;
+    padding: 170px 7% 80px;
+    background-color: var(--section-bg);
+    color: var(--text);
+    transition: background-color 0.3s ease,
+                color 0.3s ease;
+}
 
 
+/* =========================================
+   ABOUT HEADER
+========================================= */
+
+.about-header {
+    max-width: 900px;
+    margin: 0 auto 80px;
+    text-align: center;
+}
+
+.about-label {
+    margin-bottom: 18px;
+    color: #059669;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.about-header h1 {
+    margin: 0;
+    font-size: 52px;
+    line-height: 1.15;
+    font-weight: 800;
+    color: var(--text);
+}
+
+.about-header h1 span {
+    color: #059669;
+}
+
+.about-intro {
+    max-width: 700px;
+    margin: 25px auto 0;
+    color: var(--muted);
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   ABOUT CARDS
+========================================= */
+
+.about-content {
+    max-width: 1200px;
+    margin: 0 auto 100px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.about-card {
+    padding: 35px 30px;
+
+    background-color: var(--card-bg);
+
+    border: 1px solid var(--border);
+    border-radius: 18px;
+
+    text-align: center;
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease,
+                border-color 0.3s ease;
+}
+
+.about-card:hover {
+    transform: translateY(-8px);
+
+    border-color: #059669;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.about-icon {
+    width: 70px;
+    height: 70px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #059669;
+    color: white;
+
+    border-radius: 50%;
+
+    font-size: 30px;
+}
+
+.about-card h2 {
+    margin-bottom: 15px;
+
+    font-size: 23px;
+
+    color: var(--text);
+}
+
+.about-card p {
+    color: var(--muted);
+
+    line-height: 1.7;
+
+    font-size: 15px;
+}
+
+
+/* =========================================
+   FEATURES SECTION
+========================================= */
+
+.about-features {
+    max-width: 1200px;
+    margin: 0 auto 100px;
+
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+
+    gap: 80px;
+
+    align-items: start;
+}
+
+.about-section-title p {
+    margin-bottom: 15px;
+
+    color: #059669;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    letter-spacing: 3px;
+}
+
+.about-section-title h2 {
+    margin: 0;
+
+    color: var(--text);
+
+    font-size: 38px;
+    line-height: 1.2;
+}
+
+
+/* FEATURE GRID */
+
+.feature-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+.feature-item {
+    display: flex;
+
+    gap: 18px;
+
+    padding: 25px;
+
+    background-color: var(--card-bg);
+
+    border: 1px solid var(--border);
+
+    border-radius: 15px;
+}
+
+.feature-item > span {
+    color: #059669;
+
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.feature-item h3 {
+    margin-bottom: 8px;
+
+    color: var(--text);
+
+    font-size: 18px;
+}
+
+.feature-item p {
+    color: var(--muted);
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   CALL TO ACTION
+========================================= */
+
+.about-cta {
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    padding: 55px 30px;
+
+    text-align: center;
+
+    background-color: var(--card-bg);
+
+    border: 1px solid var(--border);
+
+    border-radius: 20px;
+}
+
+.about-cta h2 {
+    margin-bottom: 12px;
+
+    color: var(--text);
+
+    font-size: 32px;
+}
+
+.about-cta p {
+    margin-bottom: 25px;
+
+    color: var(--muted);
+}
+
+.about-btn {
+    display: inline-block;
+
+    padding: 13px 28px;
+
+    background-color: #059669;
+
+    color: white;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    transition: transform 0.3s ease,
+                background-color 0.3s ease;
+}
+
+.about-btn:hover {
+    transform: translateY(-3px);
+
+    background-color: #047857;
+}
+
+.about-logo {
+    display: block;
+
+    width: 220px;
+    height: auto;
+
+    margin: 35px auto 0;
+}
+
+/* =========================================
+   CONTACT US PAGE
+========================================= */
+
+.contact-page {
+    min-height: 100vh;
+
+    padding: 170px 7% 80px;
+
+    background-color: var(--section-bg);
+    color: var(--text);
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
+}
+
+
+/* =========================================
+   CONTACT HEADER
+========================================= */
+
+.contact-header {
+    max-width: 850px;
+
+    margin: 0 auto 75px;
+
+    text-align: center;
+}
+
+.contact-label {
+    margin-bottom: 18px;
+
+    color: #059669;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    letter-spacing: 3px;
+}
+
+.contact-header h1 {
+    margin: 0;
+
+    color: var(--text);
+
+    font-size: 52px;
+    line-height: 1.15;
+
+    font-weight: 800;
+}
+
+.contact-header h1 span {
+    color: #059669;
+}
+
+.contact-intro {
+    max-width: 650px;
+
+    margin: 25px auto 0;
+
+    color: var(--muted);
+
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   CONTACT CONTENT
+========================================= */
+
+.contact-content {
+    max-width: 1150px;
+
+    margin: 0 auto 100px;
+
+    display: grid;
+
+    grid-template-columns: 0.9fr 1.1fr;
+
+    gap: 60px;
+
+    align-items: start;
+}
+
+
+/* =========================================
+   CONTACT INFORMATION
+========================================= */
+
+.contact-info {
+    padding-top: 20px;
+}
+
+.contact-small-title {
+    margin-bottom: 15px;
+
+    color: #059669;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    letter-spacing: 3px;
+}
+
+.contact-info h2 {
+    margin-bottom: 20px;
+
+    color: var(--text);
+
+    font-size: 38px;
+    line-height: 1.2;
+}
+
+.contact-description {
+    margin-bottom: 35px;
+
+    color: var(--muted);
+
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+
+/* CONTACT ITEMS */
+
+.contact-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    margin-bottom: 25px;
+}
+
+.contact-icon {
+    width: 55px;
+    height: 55px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background-color: #059669;
+
+    color: white;
+
+    border-radius: 50%;
+
+    font-size: 22px;
+}
+
+.contact-item h3 {
+    margin-bottom: 5px;
+
+    color: var(--text);
+
+    font-size: 17px;
+}
+
+.contact-item p {
+    color: var(--muted);
+
+    font-size: 14px;
+}
+
+
+/* =========================================
+   CONTACT FORM
+========================================= */
+
+.contact-form-card {
+    padding: 40px;
+
+    background-color: var(--card-bg);
+
+    border: 1px solid var(--border);
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.contact-form-card h2 {
+    margin-bottom: 30px;
+
+    color: var(--text);
+
+    font-size: 28px;
+}
+
+
+/* FORM GROUP */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: var(--text);
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+/* INPUTS */
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+
+    padding: 13px 15px;
+
+    background-color: var(--bg);
+
+    color: var(--text);
+
+    border: 1px solid var(--border);
+
+    border-radius: 10px;
+
+    outline: none;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #059669;
+
+    box-shadow: 0 0 0 3px rgba(5, 150, 105, 0.12);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: var(--muted);
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+
+/* SEND BUTTON */
+
+.contact-submit {
+    width: 100%;
+
+    padding: 14px 25px;
+
+    margin-top: 5px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background-color: #059669;
+
+    color: white;
+
+    font-family: inherit;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.3s ease,
+        background-color 0.3s ease;
+}
+
+.contact-submit:hover {
+    background-color: #047857;
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================================
+   BOTTOM SECTION
+========================================= */
+
+.contact-bottom {
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    padding: 55px 30px;
+
+    text-align: center;
+
+    background-color: var(--card-bg);
+
+    border: 1px solid var(--border);
+
+    border-radius: 20px;
+}
+
+.contact-logo {
+    display: block;
+
+    width: 160px;
+    height: auto;
+
+    margin: 0 auto 25px;
+}
+
+.contact-bottom h2 {
+    margin-bottom: 25px;
+
+    color: var(--text);
+
+    font-size: 30px;
+
+    line-height: 1.3;
+}
+
+.contact-btn {
+    display: inline-block;
+
+    padding: 13px 28px;
+
+    background-color: #059669;
+
+    color: white;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    transition:
+        transform 0.3s ease,
+        background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: #047857;
+
+    transform: translateY(-3px);
+}
+
+/* =========================================
+   MY DAY PLAN
+========================================= */
+
+.my-plan-page {
+
+    min-height: 100vh;
+
+    padding: 170px 7% 100px;
+
+    background-color: var(--section-bg);
+
+    color: var(--text);
+
+}
+
+
+/* PAGE HEADER */
+
+.my-plan-header {
+
+    max-width: 800px;
+
+    margin: 0 auto 60px;
+
+    text-align: center;
+
+}
+
+.my-plan-label {
+
+    margin-bottom: 12px;
+
+    color: #059669;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+}
+
+.my-plan-header h1 {
+
+    margin: 0;
+
+    font-size: 50px;
+
+    color: var(--text);
+
+}
+
+.my-plan-header h1 span {
+
+    color: #059669;
+
+}
+
+.my-plan-header > p:last-child {
+
+    margin-top: 18px;
+
+    color: var(--muted);
+
+    font-size: 16px;
+
+}
+
+
+/* =========================================
+   MAIN LAYOUT
+========================================= */
+
+.my-plan-layout {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1.5fr 0.8fr;
+
+    gap: 30px;
+
+    align-items: start;
+
+}
+
+
+/* =========================================
+   SELECTED PLACES
+========================================= */
+
+.selected-places-card {
+
+    background-color: var(--card-bg);
+
+    border: 1px solid var(--border);
+
+    border-radius: 18px;
+
+    padding: 30px;
+
+}
+
+.plan-card-header {
+
+    padding-bottom: 20px;
+
+    border-bottom: 1px solid var(--border);
+
+}
+
+.plan-small-title {
+
+    margin-bottom: 7px;
+
+    color: #059669;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+}
+
+.plan-card-header h2 {
+
+    color: var(--text);
+
+    font-size: 24px;
+
+}
+
+
+/* =========================================
+   SELECTED PLACE ITEM
+========================================= */
+
+.selected-place {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    padding: 18px 5px;
+
+    border-bottom: 1px solid var(--border);
+
+}
+
+.place-number {
+
+    width: 32px;
+
+    height: 32px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background-color: #059669;
+
+    color: white;
+
+    border-radius: 50%;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+}
+
+.selected-place-image {
+
+    width: 80px;
+
+    height: 65px;
+
+    flex-shrink: 0;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+}
+
+.selected-place-info {
+
+    flex: 1;
+
+}
+
+.selected-place-info h3 {
+
+    margin-bottom: 5px;
+
+    color: var(--text);
+
+    font-size: 17px;
+
+}
+
+.selected-place-info p {
+
+    color: var(--muted);
+
+    font-size: 13px;
+
+}
+
+.selected-place-distance {
+
+    color: var(--text);
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+
+}
+
+
+/* REMOVE */
+
+.remove-place {
+
+    width: 34px;
+
+    height: 34px;
+
+    border: none;
+
+    background: transparent;
+
+    color: #dc2626;
+
+    font-size: 20px;
+
+    cursor: pointer;
+
+    border-radius: 50%;
+
+}
+
+.remove-place:hover {
+
+    background-color: rgba(220, 38, 38, 0.1);
+
+}
+
+
+/* =========================================
+   EMPTY
+========================================= */
+
+.empty-plan {
+
+    padding: 55px 20px;
+
+    text-align: center;
+
+}
+
+.empty-plan-icon {
+
+    font-size: 42px;
+
+    margin-bottom: 15px;
+
+}
+
+.empty-plan h3 {
+
+    margin-bottom: 10px;
+
+    color: var(--text);
+
+    font-size: 22px;
+
+}
+
+.empty-plan p {
+
+    max-width: 450px;
+
+    margin: 0 auto 22px;
+
+    color: var(--muted);
+
+    line-height: 1.6;
+
+}
+
+.plan-explore-btn {
+
+    display: inline-block;
+
+    padding: 12px 24px;
+
+    background-color: #059669;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 25px;
+
+    font-weight: 600;
+
+}
+
+
+/* =========================================
+   SUMMARY
+========================================= */
+
+.plan-summary-card {
+
+    padding: 30px;
+
+    background-color: var(--card-bg);
+
+    border: 1px solid var(--border);
+
+    border-radius: 18px;
+
+}
+
+.plan-summary-card h2 {
+
+    margin-bottom: 25px;
+
+    color: var(--text);
+
+    font-size: 27px;
+
+}
+
+.summary-item {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 18px 0;
+
+    border-bottom: 1px solid var(--border);
+
+}
+
+.summary-item span {
+
+    color: var(--muted);
+
+    font-size: 14px;
+
+}
+
+.summary-item strong {
+
+    color: var(--text);
+
+    font-size: 18px;
+
+}
+
+
+/* BUTTONS */
+
+.clear-plan-btn {
+
+    width: 100%;
+
+    margin-top: 25px;
+
+    padding: 12px;
+
+    background: transparent;
+
+    color: #dc2626;
+
+    border: 1px solid #dc2626;
+
+    border-radius: 25px;
+
+    cursor: pointer;
+
+    font-family: inherit;
+
+    font-weight: 600;
+
+}
+
+.clear-plan-btn:hover {
+
+    background-color: #dc2626;
+
+    color: white;
+
+}
+
+.add-more-btn {
+
+    display: block;
+
+    margin-top: 12px;
+
+    padding: 12px;
+
+    background-color: #059669;
+
+    color: white;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    border-radius: 25px;
+
+    font-weight: 600;
+
+}
+
+.btn-card-add.plan-added {
+
+    background-color: #059669;
+
+    color: white;
+
+    border-color: #059669;
+}

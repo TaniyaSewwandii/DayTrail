@@ -23,9 +23,9 @@
       <li><a href="index.php" >HOME</a></li>
       <li><a href="places.php">PLACES</a></li>
       <li><a href="category.php">CATEGORIES</a></li>
-      <li><a href="#my-plan">MY PLAN</a></li>
-      <li><a href="#about">ABOUT US</a></li>
-      <li><a href="#contact">CONTACT</a></li>
+      <li><a href="myplan.php">MY PLAN</a></li>
+      <li><a href="aboutus.php">ABOUT US</a></li>
+      <li><a href="contact.php">CONTACT</a></li>
     </ul>
   </nav>
 
@@ -97,9 +97,16 @@
     VIEW MORE →
 </a>
 
-            <button class="btn-card-add">
-                +
-            </button>
+           <button
+    class="btn-card-add"
+    data-name="Galle Face Green"
+    data-category="NATURE"
+    data-image="pics/galleface.jpg"
+    data-distance="4"
+    data-hours="1.5"
+>
+    +
+</button>
 
         </div>
 
@@ -142,9 +149,16 @@
     VIEW MORE →
 </a>
 
-            <button class="btn-card-add">
-                +
-            </button>
+            <button
+    class="btn-card-add"
+    data-name="One Galle Face"
+    data-category="SHOPPING"
+    data-image="pics/onegalleface.jpg"
+    data-distance="4"
+    data-hours="2"
+>
+    +
+</button>
 
         </div>
 
@@ -189,9 +203,16 @@
     VIEW MORE →
 </a>
 
-            <button class="btn-card-add">
-                +
-            </button>
+          <button
+    class="btn-card-add"
+    data-name="Gangaramaya Temple"
+    data-category="RELIGIOUS"
+    data-image="pics/gangaramaya.jpg"
+    data-distance="5"
+    data-hours="1.5"
+>
+    +
+</button>
 
         </div>
 
@@ -236,9 +257,16 @@
     VIEW MORE →
 </a>
 
-            <button class="btn-card-add">
-                +
-            </button>
+         <button
+    class="btn-card-add"
+    data-name="Colombo National Museum"
+    data-category="HERITAGE"
+    data-image="pics/museum.jpg"
+    data-distance="6"
+    data-hours="2"
+>
+    +
+</button>
 
         </div>
 
@@ -283,9 +311,16 @@
     VIEW MORE →
 </a>
 
-            <button class="btn-card-add">
-                +
-            </button>
+            <button
+    class="btn-card-add"
+    data-name="Colombo Lotus Tower"
+    data-category="ENTERTAINMENT"
+    data-image="pics/loutus tower.jpg"
+    data-distance="5"
+    data-hours="1.5"
+>
+    +
+</button>
 
         </div>
 
@@ -330,9 +365,16 @@
     VIEW MORE →
 </a>
 
-            <button class="btn-card-add">
-                +
-            </button>
+           <button
+    class="btn-card-add"
+    data-name="Dehiwala Zoo"
+    data-category="NATURE"
+    data-image="pics/zoo.jpg"
+    data-distance="10"
+    data-hours="3"
+>
+    +
+</button>
 
         </div>
 
@@ -377,9 +419,16 @@
     VIEW MORE →
 </a>
 
-            <button class="btn-card-add">
-                +
-            </button>
+           <button
+    class="btn-card-add"
+    data-name="Viharamahadevi Park"
+    data-category="NATURE"
+    data-image="pics/viharamahadevi.jpg"
+    data-distance="5"
+    data-hours="1"
+>
+    +
+</button>
 
         </div>
 
@@ -424,9 +473,16 @@
     VIEW MORE →
 </a>
 
-            <button class="btn-card-add">
-                +
-            </button>
+            <button
+    class="btn-card-add"
+    data-name="Independence Memorial Hall"
+    data-category="HERITAGE"
+    data-image="pics/independence.jpg"
+    data-distance="7"
+    data-hours="1"
+>
+    +
+</button>
 
         </div>
 
@@ -471,9 +527,16 @@
     VIEW MORE →
 </a>
 
-            <button class="btn-card-add">
-                +
-            </button>
+          <button
+    class="btn-card-add"
+    data-name="Havelock City Mall"
+    data-category="SHOPPING"
+    data-image="pics/havelock.jpg"
+    data-distance="8"
+    data-hours="2"
+>
+    +
+</button>
 
         </div>
 
@@ -518,9 +581,16 @@
     VIEW MORE →
 </a>
 
-            <button class="btn-card-add">
-                +
-            </button>
+          <button
+    class="btn-card-add"
+    data-name="Water World Lanka"
+    data-category="NATURE"
+    data-image="pics/waterworld.jpg"
+    data-distance="17"
+    data-hours="3"
+>
+    +
+</button>   
 
         </div>
 
@@ -555,9 +625,16 @@
                 VIEW MORE →
             </a>
 
-            <button class="btn-card-add">
-                +
-            </button>
+            <button
+    class="btn-card-add"
+    data-name="St. Anthony's Shrine, Kochchikade"
+    data-category="RELIGIOUS"
+    data-image="pics/stanthonys.jpg"
+    data-distance="4"
+    data-hours="1"
+>
+    +
+</button>
 
         </div>
 
@@ -600,7 +677,7 @@
                 <li><a href="index.php">Home</a></li>
                 <li><a href="places.php">Places</a></li>
                 <li><a href="category.php">Categories</a></li>
-                <li><a href="#my-plan">My Plan</a></li>
+                <li><a href="myplan.php">My Plan</a></li>
             </ul>
 
         </div>

@@ -16,9 +16,9 @@
       <li><a href="index.php" >HOME</a></li>
       <li><a href="places.php">PLACES</a></li>
       <li><a href="category.php">CATEGORIES</a></li>
-      <li><a href="#my-plan">MY PLAN</a></li>
-      <li><a href="#about">ABOUT US</a></li>
-      <li><a href="#contact">CONTACT</a></li>
+      <li><a href="myplan.php">MY PLAN</a></li>
+      <li><a href="aboutus.php">ABOUT US</a></li>
+      <li><a href="contact.php">CONTACT</a></li>
     </ul>
     <button id="themeToggle" class="theme-toggle">
     🌙
@@ -32,7 +32,7 @@
     <p>Discover amazing places within 25 km of Colombo and plan your perfect one-day trip.</p>
     <div class="buttongroup">
       <a href="places.php" class="btn btn-green">Explore Places</a>
-      <a href="#plan" class="btn btn-white">Plan My Trip</a>   
+      <a href="myplan.php" class="btn btn-white">Plan My Trip</a>   
     </div>
     </div>
 </section>
@@ -58,7 +58,16 @@
                   <a href="details.php?place=lotus-tower" class="btn-view">
     VIEW MORE →
 </a>
-          <button class="btn-card-add">+</button>
+          <button
+    class="btn-card-add"
+    data-name="Colombo Lotus Tower"
+    data-category="ENTERTAINMENT"
+    data-image="pics/loutus tower.jpg"
+    data-distance="5"
+    data-hours="1.5"
+>
+    +
+</button>
         </div>
       </div>
     </div>
@@ -77,7 +86,16 @@
           <a href="details.php?place=galle-face" class="btn-view">
     VIEW MORE →
 </a>
-          <button class="btn-card-add">+</button>
+          <button
+    class="btn-card-add"
+    data-name="Galle Face Green"
+    data-category="NATURE"
+    data-image="pics/galleface.jpg"
+    data-distance="4"
+    data-hours="1.5"
+>
+    +
+</button>
         </div>
       </div>
     </div>
@@ -105,7 +123,7 @@
         <li><a href="index.php">Home</a></li>
         <li><a href="places.php">Places</a></li>
         <li><a href="category.php">Categories</a></li>
-        <li><a href="#my-plan">My Plan</a></li>
+        <li><a href="myplan.php">My Plan</a></li>
       </ul>
     </div>
 
