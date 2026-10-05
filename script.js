@@ -1,8 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    /* =========================
-       LIGHT / DARK MODE
-       ========================= */
+    /* LIGHT / DARK MODE */
 
     const themeToggle = document.getElementById("themeToggle");
 

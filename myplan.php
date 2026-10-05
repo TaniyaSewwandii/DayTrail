@@ -156,17 +156,7 @@
             </div>
 
 
-            <div class="summary-item">
-
-                <span>
-                    Estimated Time
-                </span>
-
-                <strong>
-                    <span id="totalHours">0</span> hours
-                </strong>
-
-            </div>
+            
 
 
             <button

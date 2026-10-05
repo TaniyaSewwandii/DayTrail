@@ -2184,3 +2184,476 @@ body.dark-mode .btn-card-add:hover {
 
     border-color: #059669;
 }
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+/* TABLET */
+@media (max-width: 900px) {
+
+    /* NAVBAR */
+    .navbar {
+        padding: 18px 30px;
+        gap: 20px;
+    }
+
+    .logo {
+        height: 65px;
+    }
+
+    .nav-list {
+        gap: 22px;
+    }
+
+    .nav-list a {
+        font-size: 12px;
+        letter-spacing: 0.5px;
+    }
+
+
+    /* HOME HERO */
+    .main h1 {
+        font-size: 65px;
+    }
+
+    .main p {
+        font-size: 18px;
+    }
+
+
+    /* PLACES */
+    .places-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* CATEGORY */
+    .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* ABOUT */
+    .about-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-features {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+
+    /* CONTACT */
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* MY PLAN */
+    .my-plan-layout {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    /* -------------------------------------
+       NAVBAR
+    ------------------------------------- */
+
+    .navbar {
+        position: absolute;
+
+        width: 100%;
+
+        padding: 15px 15px;
+
+        display: flex;
+
+        flex-direction: column;
+
+        justify-content: center;
+
+        align-items: center;
+
+        gap: 12px;
+    }
+
+    .logo {
+        height: 55px;
+    }
+
+    .nav-list {
+        width: 100%;
+
+        display: flex;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        align-items: center;
+
+        gap: 8px 15px;
+    }
+
+    .nav-list a {
+        font-size: 10px;
+
+        letter-spacing: 0.5px;
+
+        white-space: nowrap;
+    }
+
+
+    /* -------------------------------------
+       HOME
+    ------------------------------------- */
+
+    .main {
+        min-height: 100vh;
+
+        padding: 130px 20px 50px;
+    }
+
+    .main h1 {
+        font-size: 48px;
+
+        letter-spacing: 2px;
+    }
+
+    .main p {
+        font-size: 16px;
+
+        line-height: 1.6;
+    }
+
+    .buttongroup {
+        flex-direction: column;
+
+        width: 100%;
+
+        max-width: 280px;
+
+        gap: 12px;
+    }
+
+    .btn-white,
+    .btn-green {
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+    /* -------------------------------------
+       PLACES
+    ------------------------------------- */
+
+    .places-section {
+        padding: 70px 20px;
+    }
+
+    .places-page {
+        padding: 140px 20px 70px;
+    }
+
+    .places-page-header h1 {
+        font-size: 38px;
+    }
+
+    .places-page-header p {
+        font-size: 15px;
+
+        line-height: 1.6;
+    }
+
+    .search-filter-container {
+        margin-bottom: 35px;
+    }
+
+    .place-search {
+        width: 100%;
+
+        max-width: 450px;
+    }
+
+    .places-grid {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+    .card-img-wrapper {
+        height: 220px;
+    }
+
+
+    /* -------------------------------------
+       DETAILS
+    ------------------------------------- */
+
+    .details-container {
+        width: 92%;
+
+        margin: 30px auto 60px;
+    }
+
+    .details-card {
+        grid-template-columns: 1fr;
+    }
+
+    .details-image {
+        min-height: 280px;
+
+        height: 280px;
+    }
+
+    .details-content {
+        padding: 25px;
+    }
+
+    .details-content h1 {
+        font-size: 30px;
+    }
+
+    .details-info {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* -------------------------------------
+       CATEGORY
+    ------------------------------------- */
+
+    .category-page {
+        padding: 130px 20px 70px;
+    }
+
+    .category-header h1 {
+        font-size: 34px;
+    }
+
+    .category-header p {
+        font-size: 15px;
+
+        line-height: 1.6;
+    }
+
+    .category-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* -------------------------------------
+       ABOUT
+    ------------------------------------- */
+
+    .about-page {
+        padding: 140px 20px 70px;
+    }
+
+    .about-header {
+        margin-bottom: 50px;
+    }
+
+    .about-header h1 {
+        font-size: 38px;
+    }
+
+    .about-intro {
+        font-size: 15px;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+
+        margin-bottom: 60px;
+    }
+
+    .about-features {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+
+        margin-bottom: 60px;
+    }
+
+    .about-section-title h2 {
+        font-size: 32px;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-cta {
+        padding: 40px 20px;
+    }
+
+
+    /* -------------------------------------
+       CONTACT
+    ------------------------------------- */
+
+    .contact-page {
+        padding: 140px 20px 70px;
+    }
+
+    .contact-header {
+        margin-bottom: 50px;
+    }
+
+    .contact-header h1 {
+        font-size: 38px;
+    }
+
+    .contact-intro {
+        font-size: 15px;
+    }
+
+    .contact-content {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+
+        margin-bottom: 60px;
+    }
+
+    .contact-info h2 {
+        font-size: 32px;
+    }
+
+    .contact-form-card {
+        padding: 25px;
+    }
+
+    .contact-bottom {
+        padding: 40px 20px;
+    }
+
+
+    /* -------------------------------------
+       MY PLAN
+    ------------------------------------- */
+
+    .my-plan-page {
+        padding: 140px 20px 70px;
+    }
+
+    .my-plan-header h1 {
+        font-size: 38px;
+    }
+
+    .my-plan-header > p:last-child {
+        font-size: 15px;
+
+        line-height: 1.6;
+    }
+
+    .my-plan-layout {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+    .selected-places-card,
+    .plan-summary-card {
+        padding: 20px;
+    }
+
+    .selected-place {
+        gap: 10px;
+    }
+
+    .selected-place-image {
+        width: 70px;
+
+        height: 60px;
+    }
+
+    .selected-place-info h3 {
+        font-size: 14px;
+    }
+
+    .selected-place-info p {
+        font-size: 12px;
+    }
+
+    .selected-place-distance {
+        display: none;
+    }
+
+
+    /* -------------------------------------
+       FOOTER
+    ------------------------------------- */
+
+    .footer {
+        padding: 55px 20px 20px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+
+        text-align: center;
+    }
+
+    .brand-col p {
+        margin: 0 auto;
+    }
+
+    .footer-logo {
+        height: 100px;
+    }
+
+}
+
+
+/* =========================================
+   SMALL PHONES
+========================================= */
+
+@media (max-width: 400px) {
+
+    .navbar {
+        padding: 12px 10px;
+
+        gap: 10px;
+    }
+
+    .logo {
+        height: 48px;
+    }
+
+    .nav-list {
+        gap: 7px 11px;
+    }
+
+    .nav-list a {
+        font-size: 9px;
+    }
+
+    .main h1 {
+        font-size: 40px;
+    }
+
+    .places-page-header h1 {
+        font-size: 32px;
+    }
+
+    .details-content h1 {
+        font-size: 27px;
+    }
+
+}

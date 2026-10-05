@@ -281,31 +281,602 @@ body {
 }
 
 
-/* MOBILE */
+/* =========================
+   MANAGE PLACES
+========================= */
 
-@media (max-width: 800px) {
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.page-header h1 {
+    color: #171616;
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.page-header p {
+    color: #6b7280;
+}
+
+.add-btn {
+    background: #059669;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.add-btn:hover {
+    background: #047857;
+}
+
+
+/* TABLE */
+
+.table-container {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th {
+    background: #f3f4f6;
+    color: #374151;
+    padding: 14px;
+    text-align: left;
+    font-size: 14px;
+}
+
+table td {
+    padding: 14px;
+    border-bottom: 1px solid #e5e7eb;
+    color: #374151;
+}
+
+table tr:hover {
+    background: #f9fafb;
+}
+
+.place-image {
+    width: 70px;
+    height: 55px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.category-badge {
+    display: inline-block;
+    background: #d1fae5;
+    color: #047857;
+    padding: 5px 9px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.action-buttons {
+    white-space: nowrap;
+}
+
+.edit-btn,
+.delete-btn {
+    display: inline-block;
+    padding: 7px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 13px;
+    margin-right: 5px;
+}
+
+.edit-btn {
+    background: #e0f2fe;
+    color: #0369a1;
+}
+
+.delete-btn {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+.edit-btn:hover {
+    background: #bae6fd;
+}
+
+.delete-btn:hover {
+    background: #fecaca;
+}
+
+.no-data {
+    text-align: center;
+    padding: 40px !important;
+    color: #6b7280 !important;
+}
+/* =========================
+   ADD / EDIT PLACE FORM
+========================= */
+
+.place-form-container {
+    background: white;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    max-width: 1000px;
+}
+
+.place-form-container h2 {
+    color: #171616;
+    font-size: 20px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.place-form-container h2:first-child {
+    margin-top: 0;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.admin-form-group {
+    margin-bottom: 20px;
+}
+
+.admin-form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #374151;
+    font-weight: 600;
+}
+
+.admin-form-group input,
+.admin-form-group select,
+.admin-form-group textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    outline: none;
+}
+
+.admin-form-group input:focus,
+.admin-form-group select:focus,
+.admin-form-group textarea:focus {
+    border-color: #059669;
+}
+
+.admin-form-group textarea {
+    resize: vertical;
+}
+
+.admin-form-group small {
+    display: block;
+    margin-top: 6px;
+    color: #6b7280;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #e5e7eb;
+}
+
+.cancel-btn,
+.save-btn {
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.cancel-btn {
+    background: #e5e7eb;
+    color: #374151;
+}
+
+.save-btn {
+    border: none;
+    background: #059669;
+    color: white;
+}
+
+.save-btn:hover {
+    background: #047857;
+}
+
+.form-message {
+    max-width: 1000px;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.success-message {
+    background: #d1fae5;
+    color: #047857;
+}
+
+.success-message a {
+    color: #047857;
+    font-weight: 600;
+}
+/* =========================================
+   ADMIN PANEL RESPONSIVE DESIGN
+========================================= */
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    /* SIDEBAR */
+
+    .sidebar {
+        width: 210px;
+        padding: 20px 10px;
+    }
+
+    .sidebar-logo img {
+        width: 65px;
+    }
+
+    .sidebar-logo h2 {
+        font-size: 20px;
+    }
+
+    .sidebar nav a {
+        padding: 11px 10px;
+        font-size: 13px;
+    }
+
+
+    /* MAIN CONTENT */
+
+    .main-content {
+        padding: 30px 25px;
+    }
+
+
+    /* STAT CARDS */
+
+    .stat-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+
+    /* ACTION CARDS */
+
+    .action-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* FORM */
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    /* =====================================
+       MAIN DASHBOARD
+    ===================================== */
 
     .dashboard {
         flex-direction: column;
     }
 
+
+    /* =====================================
+       SIDEBAR
+    ===================================== */
+
     .sidebar {
         width: 100%;
         min-height: auto;
+
+        padding: 15px;
     }
+
+    .sidebar-logo {
+        margin-bottom: 15px;
+    }
+
+    .sidebar-logo img {
+        width: 55px;
+        margin-bottom: 5px;
+    }
+
+    .sidebar-logo h2 {
+        font-size: 20px;
+    }
+
+    .sidebar-logo p {
+        font-size: 12px;
+    }
+
+
+    /* NAVIGATION */
 
     .sidebar nav {
         flex-direction: row;
+
         flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 7px;
+    }
+
+    .sidebar nav a {
+        padding: 9px 11px;
+
+        font-size: 12px;
+
+        text-align: center;
+    }
+
+
+    /* =====================================
+       MAIN CONTENT
+    ===================================== */
+
+    .main-content {
+        width: 100%;
+
+        padding: 25px 15px;
+    }
+
+
+    /* =====================================
+       PAGE HEADER
+    ===================================== */
+
+    .page-header {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 18px;
+    }
+
+    .page-header h1 {
+        font-size: 26px;
+    }
+
+    .page-header p {
+        font-size: 13px;
+    }
+
+    .add-btn {
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+    /* =====================================
+       DASHBOARD HEADER
+    ===================================== */
+
+    .dashboard-header h1 {
+        font-size: 27px;
+    }
+
+    .dashboard-header p {
+        font-size: 13px;
+    }
+
+
+    /* =====================================
+       STAT CARDS
+    ===================================== */
+
+    .stat-container {
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+
+        margin-top: 25px;
+    }
+
+    .stat-card {
+        padding: 20px;
+    }
+
+    .stat-icon {
+        width: 50px;
+        height: 50px;
+
+        font-size: 23px;
+    }
+
+    .stat-card h3 {
+        font-size: 25px;
+    }
+
+
+    /* =====================================
+       DASHBOARD ACTIONS
+    ===================================== */
+
+    .action-container {
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+    }
+
+    .action-card {
+        padding: 22px;
+    }
+
+
+    /* =====================================
+       TABLE
+    ===================================== */
+
+    .table-container {
+        width: 100%;
+
+        padding: 10px;
+
+        overflow-x: auto;
+
+        -webkit-overflow-scrolling: touch;
+    }
+
+    table {
+        min-width: 750px;
+    }
+
+    table th,
+    table td {
+        padding: 10px;
+
+        font-size: 12px;
+    }
+
+    .place-image {
+        width: 60px;
+        height: 50px;
+    }
+
+
+    /* =====================================
+       ADD / EDIT FORM
+    ===================================== */
+
+    .place-form-container {
+        width: 100%;
+
+        padding: 20px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+
+        gap: 0;
+    }
+
+    .place-form-container h2 {
+        font-size: 18px;
+    }
+
+    .admin-form-group input,
+    .admin-form-group select,
+    .admin-form-group textarea {
+        font-size: 14px;
+    }
+
+
+    /* =====================================
+       FORM BUTTONS
+    ===================================== */
+
+    .form-actions {
+        flex-direction: column;
+    }
+
+    .cancel-btn,
+    .save-btn {
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+    /* =====================================
+       LOGIN
+    ===================================== */
+
+    .login-container {
+        padding: 15px;
+    }
+
+    .login-card {
+        padding: 30px 22px;
+
+        border-radius: 16px;
+    }
+
+    .login-card h1 {
+        font-size: 26px;
+    }
+
+    .login-logo img {
+        width: 85px;
+    }
+
+}
+
+
+/* =========================================
+   VERY SMALL PHONES
+========================================= */
+
+@media (max-width: 400px) {
+
+    .sidebar {
+        padding: 12px 8px;
+    }
+
+    .sidebar nav {
+        gap: 5px;
+    }
+
+    .sidebar nav a {
+        padding: 8px 8px;
+
+        font-size: 11px;
     }
 
     .main-content {
-        padding: 25px;
+        padding: 20px 10px;
     }
 
-    .stat-container,
-    .action-container {
-        grid-template-columns: 1fr;
+    .page-header h1 {
+        font-size: 23px;
+    }
+
+    .place-form-container {
+        padding: 16px;
+    }
+
+    .login-card {
+        padding: 25px 18px;
     }
 
 }
