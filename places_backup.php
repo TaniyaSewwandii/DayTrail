@@ -305,7 +305,7 @@
             beautiful views of Colombo.
         </p>
 
-        <div class="card-actions">
+        <div class="">
 
            <a href="details.php?place=lotus-tower" class="btn-view">
     VIEW MORE →

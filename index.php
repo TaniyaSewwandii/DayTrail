@@ -56,9 +56,11 @@
         <h3>Lotus Tower</h3>
         <p>South Asia's tallest structure offering breathtaking skyline views.</p>
         <div class="card-actions">
-                  <a href="details.php?place=lotus-tower" class="btn-view">
+      <a href="details.php?id=16" class="btn-view">
     VIEW MORE →
 </a>
+
+   
           <button
     class="btn-card-add"
     data-name="Colombo Lotus Tower"
@@ -84,7 +86,7 @@
         <h3>Galle Face Green</h3>
         <p>Famous ocean-side urban park perfect for sunsets and street food.</p>
         <div class="card-actions">
-          <a href="details.php?place=galle-face" class="btn-view">
+      <a href="details.php?id=12" class="btn-view">
     VIEW MORE →
 </a>
           <button
